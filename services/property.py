@@ -60,16 +60,18 @@ def add_property(properties: list):
         unit_price = 0
 
     unit_period = input("Please input unit period ('months' or 'years' or 'days' - empty will be 'days'): ")
-    if not type in UNIT_PERIOD:
-        print(f"\nError: unit_period {type} is not valid. Please use following {UNIT_PERIOD}!")
+    if not unit_period in UNIT_PERIOD:
+        print(f"\nError: unit_period {unit_period} is not valid. Please use following {UNIT_PERIOD}!")
         return
 
+    address = input("Please input unit address: ")
     new_data = {
         "id": new_id,
         "name": name,
         "type": type,
         "unit_price": unit_price,
         "unit_period": unit_period,
+        "address": address,
     }
 
     properties.append(new_data)
