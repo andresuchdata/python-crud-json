@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "customer": 3,
+    "property": 2,
+    "start_date": "01/06/2023",
+    "end_date": "08/06/2023",
+    "period": 7,
+    "total_price": 1400000
+  },
+  {
+    "id": 2,
+    "customer": 1,
+    "property": 5,
+    "start_date": "15/06/2023",
+    "end_date": "15/08/2023",
+    "period": 7,
+    "total_price": 15000000
+  },
+  {
+    "id": 3,
+    "customer": 4,
+    "property": 8,
+    "start_date": "10/07/2023",
+    "end_date": "24/07/2023",
+    "period": 7,
+    "total_price": 4200000
+  },
+  {
+    "id": 4,
+    "customer": 2,
+    "property": 3,
+    "start_date": "01/08/2023",
+    "end_date": "31/08/2023",
+    "period": 7,
+    "total_price": 50000000
+  },
+  {
+    "id": 5,
+    "customer": 5,
+    "property": 10,
+    "start_date": "01/09/2023",
+    "end_date": "30/11/2023",
+    "period": 7,
+    "total_price": 78000000
+  }
+]
+

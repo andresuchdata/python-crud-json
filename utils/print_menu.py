@@ -1,0 +1,33 @@
+from colorama import Fore, Style
+
+def print_menu():
+    print(Fore.BLUE + "-"*50)
+    print("🏠 Welcome to RentalProperty")
+    print("-"*50)
+
+    print()
+    print(Fore.YELLOW + "RENTALS")
+    print(Fore.CYAN)
+    print(" 1. Display table rentals")
+    print(" 2. Add new rental transaction")
+    print(" 3. Edit rental transaction")
+    print(" 4. Remove rental")
+    print(" 5. Search rental by customer or property name, and sort")
+    print(Fore.CYAN + "-"*50)
+    print()
+    print(Fore.YELLOW + "CUSTOMERS")
+    print(Fore.CYAN)
+    print(" 6. Display table customers")
+    print(" 7. Add new customer")
+    print(" 8. Remove customer")
+    print(" 9. Search and sort customer")
+    print("-"*50)
+    print()
+    print(Fore.YELLOW + "PROPERTIES")
+    print(Fore.CYAN)
+    print(" 10. Display table properties")
+    print(" 11. Add new property")
+    print(" 12. Remove property")
+    print(" 13. Search and sort property")
+
+    print(Style.RESET_ALL)
