@@ -91,9 +91,24 @@ def populate_customer_property_info(rentals: list, customers: list, properties: 
     # copy each dictionary in rentals list, to avoid mutating the property and customer ID data
     for rent in rentals:
         new_rental = rent.copy()
-        current_prop = properties_dict[rent['property']]
-        new_rental['customer'] = customer_dict[rent['customer']]['full_name']
-        new_rental['property'] = properties_dict[rent['property']]['name']
+        customer_name = ""
+        property_name = ""
+        try:
+            customer_name = customer_dict[rent['customer']]['full_name']
+        except:
+            print(f"Customer ID: {rent['customer']} is no longer exist. To use empty string")
+
+        # if property ID is not available, to use empty string as default value
+        # to be shown
+        try:
+            current_prop = properties_dict[rent['property']]
+            property_name = properties_dict[rent['property']]['name']
+        except:
+            print(f"Property ID: {rent['property']} is no longer exist. To use empty string")
+            current_prop = { 'unit_period': ''}
+
+        new_rental['customer'] = customer_name
+        new_rental['property'] = property_name
 
         # populate period with unit time (days, months, or years)
         new_rental['period'] = f"{rent['period']} {current_prop['unit_period']}"
