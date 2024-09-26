@@ -9,4 +9,7 @@ venv:
 		echo '\nSuccessfully installed project dependencies!'; \
 	fi
 
+run:
+	python app.py
+
 .PHONY: venv
